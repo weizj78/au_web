@@ -1,0 +1,45 @@
+.add-row-input-container {
+    width: 70%;
+    align-items: center;
+}
+
+
+.add-row-input {
+    flex-grow: 1;
+    width: 30%;
+    border-radius: 100px;
+    padding-left: 20px;
+}
+
+.add-row-input-value {
+    flex-grow: 3;
+    border-radius: 100px;
+    padding-left: 20px;
+    width: 70%;
+}
+
+
+.input_query {
+    border-radius: 20px;
+    width: 100%;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 7px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    height: 24px;
+    min-height: 24px;
+    max-height: 96px;
+    overflow-y: hidden;
+}
+
+.input_button {
+    font-size: 50px;
+    color: blue;
+}
+
+.input_icon {
+    color: blue;
+    width: 20px;
+    height: 20px;
+}
