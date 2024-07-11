@@ -9,18 +9,15 @@ import Paragraph from "antd/es/typography/Paragraph";
 import avatar1 from "@/assets/chat_avatar.svg"
 import avatar2 from "@/assets/avatar_agent.svg"
 import avatar3 from "@/assets/folder.png"
-import avatar4 from "@/assets/default_agent_logo.jpg"
 import {Link} from "@umijs/max";
 
 
-const avatars = [avatar1, avatar2, avatar3, avatar4]
+const avatars = [avatar1, avatar2, avatar3]
 
 function getRandomAvatar() {
     const index = Math.floor(Math.random() * avatars.length);
     return avatars[index];
 }
-
-
 
 const {Text} = Typography
 const App = () => {
@@ -42,9 +39,9 @@ const App = () => {
                         >
                             <Link to={{pathname: "/chat/" + agent.info?.name}} state={{agent_info:agent}} >
                                 <Flex justify={'start'} align={'start'}>
-                                     <Avatar size={50} shape="square"
+                                    <Avatar size={50} shape="square"
                                         src={getRandomAvatar()}></Avatar>
-                                    <Flex justify={'start'} vertical style={{marginLeft: '15px'}}>
+                                    <Flex justify={'start'} vertical style={{marginLeft: '15px',width: '70%'}}>
                                         <Text className={styles.card_title_font}
                                               ellipsis={true}>{agent.info?.name}</Text>
                                         <Space>

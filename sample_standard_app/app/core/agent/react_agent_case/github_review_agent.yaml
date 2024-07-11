@@ -1,0 +1,30 @@
+info:
+  name: 'GitHub_review_agent'
+  description: 'github react agent'
+profile:
+  tracing: false
+  prompt_version: github_react_react_agent.cn
+  llm_model:
+    name: 'default_qwen_llm'
+    model_name: 'qwen-max'
+    temperature: 0
+action:
+  tool:
+    - 'google_search_tool'
+    - 'python_runner'
+#  knowledge:
+#    - 'civil_law_knowledge'
+#    - 'criminal_law_knowledge'
+#  agent:
+#    - 'law_rag_agent'
+  toolkit:
+    - 'github_toolkit'
+memory:
+  name: 'demo_memory'
+plan:
+  planner:
+    name: 'demo_react_planner'
+metadata:
+  type: 'AGENT'
+  module: 'sample_standard_app.app.core.agent.react_agent_case.demo_react_agent'
+  class: 'DemoReactAgent'
